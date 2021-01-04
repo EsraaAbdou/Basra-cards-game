@@ -121,6 +121,7 @@ function gameLogicSub(playerObj, cardPlayedObj, test = false){
 				if(sum == cardPlayedObj.value) {
 					comb.forEach((combSingle) => {
 						const idx = getByValue(tableCardsArr, combSingle);
+						console.log(`img[src="${tableCardsArr[idx].src}"]`)
 						const combImg = document.querySelector(`img[src="${tableCardsArr[idx].src}"]`);
 						tableCardsArr.splice(idx,1);
 						combImg.style.border = "2px solid red";

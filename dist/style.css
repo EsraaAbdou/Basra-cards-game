@@ -101,8 +101,8 @@ button {
 /* ---- splash Styles ---- */
 @font-face {
     font-family: 'headerFont';
-    src: url('BIGDREAMPersonalUse.woff2') format('woff2'),
-        url('BIGDREAMPersonalUse.woff') format('woff');
+    src: url('fonts/BIGDREAMPersonalUse.woff2') format('woff2'),
+        url('fonts/BIGDREAMPersonalUse.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
