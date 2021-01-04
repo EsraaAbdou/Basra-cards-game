@@ -90,6 +90,7 @@ function gameLogicSub(playerObj, cardPlayedObj, test = false){
 			}
 		});
 		if(score>0 && !tableCardValues.length) score += 9; // or 10
+		console.log(score)
 	}
 	// modify DOM and card Arrays
 	if(test){
@@ -133,15 +134,13 @@ function gameLogicSub(playerObj, cardPlayedObj, test = false){
 		const splicedCard = playerObj.cardsArr.splice(playerObj.index,1);
 		if(score>0) {
 			playedImgEl.style.border="2px solid red";
-			score++;
+			playerObj.scoreEl.textContent = parseInt(playerObj.scoreEl.textContent) + score +1;
 			sleep(2000).then(() => {
 				playedImgEl.remove();
 			});
 		} else {
 			tableCardsArr.push(...splicedCard)
 		}
-		playerObj.scoreEl.textContent = parseInt(playerObj.scoreEl.textContent) + score;
-		console.log(playerObj.playerNo)
 		console.log(playerObj.scoreEl.textContent)
 		if(playerObj.scoreEl.textContent > 26) {
 			gameEnd();
