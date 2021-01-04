@@ -1,0 +1,190 @@
+body{
+	background-color:#3F8167;
+	color: rgba(255,255,255,0.9);
+	font-family: sans-serif;
+	font-size: 16px;
+	margin: 0;
+}
+#gameSet{
+	display: none;
+}
+.container{
+	width: 90vw;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+.col-p, .col-m{
+	text-align: center;
+}
+.col-p img{
+	max-width: 22%;
+}
+.col-m img{
+	max-height: 25%;
+}
+.n1, .n2, .n3{
+	height: 10vh;
+}
+.n4, .n6{
+	height: 20vh;
+}
+.n5{
+	height: 50vh;
+}
+#computerCards, #playerCards{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem 0;
+	box-sizing: border-box;
+}
+.col-side{
+	display: flex;
+	align-items: center;
+	font-size: 0.5rem;
+}
+.col-main{
+	width: 100%;
+}
+.col-side{
+	width: 30%;
+}
+.w-50{
+	width: 50%;
+	margin: 0 auto;
+}
+img{
+	max-height: 100%;
+	margin: 1%;
+}
+#tableCards, .info{
+	background-color: rgba(0,32,14,0.5);
+	border: 1px solid #00200e;
+	border-radius: 5px;
+}
+#tableCards{
+	height: 100%;
+	padding: 0.5rem 0;
+	box-sizing: border-box;
+}
+.info-container{
+	padding: 1%;
+	box-sizing: border-box;
+}
+.info{
+	/* height: 100%; */
+	width: 100%;
+	padding: 4% 1%;
+	box-sizing: border-box;
+}
+button {
+	background-color: #e8d76b;
+	color: #776;
+	border: 3px solid #e8d76b;
+	border-radius: 25%;
+	padding: 0.5rem 3rem;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 2rem;
+	margin: 0 auto;
+	box-shadow: 2px 4px #888888;
+}
+/* ---- splash Styles ---- */
+@font-face {
+	font-family: headerFont;
+	src: url(BIGDREAM-PersonalUse.otf);
+}
+#splash{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+}
+h1{
+	font-family: headerFont;
+	font-size: 10rem;
+	text-align: center;
+	margin-top: 0;
+	margin: 3rem;
+}
+#splash input{
+	font-size: 1rem;
+	color:#776;
+	margin-bottom: 2rem;
+	border: none;
+	border-radius: 2%;
+	padding: 3%;
+}
+#splash input:focus{
+	outline: none;
+}
+#splash label{
+	font-size: 1.2rem;
+	display: block;
+	margin-bottom: 1rem;
+}
+/* ---- Result Modal Styles ---- */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+background-color: #776;
+color: #ddd;
+text-align: center;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #776;
+border-radius: 10px;
+padding-bottom: 20px;
+width: 20%;
+}
+.modal p{
+	margin-bottom: 25px;
+}
+.modal button{
+	font-size: 16px;
+	padding: 10px 20px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.col-side{
+		width: 25%;
+	}
+	.col-m img{
+		max-height: 32%;
+	}
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.col-side{
+		font-size: 0.7rem;
+	}
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.col-m img{
+		max-height: 40%;
+	}
+}

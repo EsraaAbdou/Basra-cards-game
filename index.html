@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Basra Game</title>
+        <meta name="description" content="Basra Game">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+	<div id="splash">
+		<div>
+			<h1>Basra</h1>
+			<label>Enter your name</label>
+			<input type = "text" id="input-name" class="w-50"/><br>
+			<button id="play">Play</button>
+		</div>
+	</div>
+	<div id="result-modal" class="modal">
+		<div class="modal-content">
+		  <p id="result-msg">Congratulation, You Won</p>
+		  <button id="again">Play Again</button>
+		</div>  
+	</div>
+	<div class="container" id ="gameSet">
+		<div class="row">
+			<div class="col-side col-p info-container n1">
+				<div class="info">
+					Player 2 (Computer) <br> score: <span id="computerScore">0</span>
+				</div>
+			</div>
+			<div class="col-side col-m info-container n2">
+				<div class="info">
+						Round <span id="round">1</span> of 6 <br> Turn: Player <span id="turn">1</span>
+				</div>
+			</div>
+			<div class="col-side col-p info-container n3">
+				<div class="info">
+					Player 1 (<span id="playerName">player name</span>) <br> score: <span id="playerScore">0</span>
+				</div>
+			</div>
+			<div class="col-main col-p n4"><div id="computerCards"></div></div>
+			<div class="col-main col-m table-col n5"><div id="tableCards"></div></div>
+			<div class="col-main col-p n6"><div id="playerCards"></div></div>
+		</div>
+	</div>
+	<script src="scripts.js"></script>
+    </body>
+</html>
